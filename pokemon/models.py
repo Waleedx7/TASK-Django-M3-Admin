@@ -14,11 +14,10 @@ class Pokemon(models.Model):
     type = models.CharField(max_length=2,choices=PokemonType.choices, default=PokemonType.WATER)
     hp = models.PositiveIntegerField()
     active = models.BooleanField(default=True)
-    name_fr = models.CharField(max_length=30, default='',blank=True)
-    name_ar = models.CharField(max_length=30,default='',blank=True)
-    name_jp = models.CharField(max_length=30,default='',blank=True)
+    name_fr = models.CharField(max_length=30, default="",blank=True)
+    name_ar = models.CharField(max_length=30,default="",blank=True)
+    name_jp = models.CharField(max_length=30,default="",blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at  = models.DateTimeField(auto_now=True)
     
-
 # Create your models here.
